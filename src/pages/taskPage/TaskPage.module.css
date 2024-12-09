@@ -1,0 +1,74 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 0 20px;
+  margin: 15px 0px 15px 0;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  height: 45px;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fe6100;
+  background-color: #1a1c21;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+.btn:focus-visible {
+  box-shadow: 0 0 0 2px #666;
+}
+.btn:hover {
+  background-color: #1a1c21ca;
+}
+.btn:active {
+  transform: scale(0.96);
+}
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.wrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.055), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item {
+  width: 24%;
+  height: 35px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:first-child {
+  width: 8%;
+  padding: 2px 5px;
+}
+
+@media (max-width: 600px) {
+  .item {
+    font-size: 12px;
+  }
+
+  .item:first-child {
+    font-size: 12px;
+  }
+}

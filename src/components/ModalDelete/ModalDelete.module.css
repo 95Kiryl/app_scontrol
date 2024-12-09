@@ -1,0 +1,91 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 150px;
+  padding: 0 20px;
+  margin: 15px 0px 15px 0;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  height: 45px;
+  line-height: 18px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fe6100;
+  background-color: #1a1c21;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  touch-action: manipulation;
+}
+.btn:focus-visible {
+  box-shadow: 0 0 0 2px #666;
+}
+.btn:hover {
+  background-color: #1a1c21ca;
+}
+.btn:active {
+  transform: scale(0.96);
+}
+.btn:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+}
+
+.modalDelete {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.title {
+  font-size: 15px;
+}
+
+.btnWrapp {
+  display: flex;
+}
+
+.btnWrapp > button:first-child {
+  margin: 15px 15px 15px 0;
+}
+
+.disabled {
+  display: none;
+}
+
+@media (max-width: 830px) {
+  .modalDelete {
+    width: 60%;
+  }
+
+  .btn {
+    width: 100px;
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .modalDelete {
+    width: 80%;
+  }
+}
